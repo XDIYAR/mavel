@@ -486,22 +486,409 @@
         </section>
 
 <!-- القسم الجديد: جميع المنتجات (المتجر) -->
-        <section class="w-full max-w-5xl mx-auto px-4 mb-24">
-            <div class="text-center mb-12">
-                <span class="text-gold-300 font-tajawal text-xs font-bold uppercase tracking-widest bg-gold-500/10 px-4 py-1.5 rounded-full border border-gold-500/30">المتجر</span>
-                <h2 class="font-amiri text-3xl sm:text-4xl md:text-5xl font-bold text-silk-100 mt-3 mb-2">جميع المنتجات</h2>
-                <p class="text-xs sm:text-sm text-silk-300/80 max-w-md mx-auto leading-relaxed">
-                    اكتشف مجموعتنا الكاملة من العطور الفاخرة التي تناسب جميع الأذواق
-                </p>
-                <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+<section class="w-full max-w-6xl mx-auto px-4 mb-24 relative">
+    <div class="text-center mb-16">
+        <span class="text-gold-300 font-tajawal text-xs font-bold uppercase tracking-widest bg-gold-500/10 px-4 py-1.5 rounded-full border border-gold-500/30">المتجر</span>
+        <h2 class="font-amiri text-3xl sm:text-4xl md:text-5xl font-bold text-silk-100 mt-3 mb-2">جميع المنتجات</h2>
+        <p class="text-xs sm:text-sm text-silk-300/80 max-w-md mx-auto leading-relaxed">
+            اكتشف مجموعتنا الكاملة من العطور الفاخرة التي تناسب جميع الأذواق
+        </p>
+        <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-gold-500 to-transparent mx-auto mt-4"></div>
+    </div>
+
+    <!-- شبكة عرض المنتجات -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="productsContainer">
+        
+        <!-- 1. Aura -->
+        <div class="bg-[#1a080c]/90 border-2 border-gold-500/30 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-gold-500/60 transition-all duration-300">
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div>
+                <div class="text-center mb-6">
+                    <span class="inline-block text-[10px] sm:text-xs font-tajawal tracking-widest uppercase text-gold-400 bg-gold-500/10 px-4 py-1 rounded-full border border-gold-500/20 mb-4">L'ÉLÉGANCE MYSTIQUE</span>
+                    <div class="w-20 h-28 mx-auto border-2 border-gold-400/70 rounded-t-2xl rounded-b-lg relative flex flex-col items-center justify-center p-2 shadow-inner bg-gradient-to-b from-gold-500/10 to-transparent mb-4">
+                        <div class="w-3 h-3 bg-gold-400 rounded-sm absolute -top-4"></div>
+                        <div class="w-8 h-8 rounded-full border border-gold-400/50 flex items-center justify-center mb-1"></div>
+                        <span class="font-amiri text-xs text-gold-300 font-bold tracking-wider">Aura</span>
+                    </div>
+                    <span class="text-xs font-tajawal text-gold-300/70 uppercase tracking-widest block mb-1">AMBITION & POWER</span>
+                    <h3 class="font-amiri text-3xl sm:text-4xl font-bold text-silk-100">Aura | أورا</h3>
+                </div>
+
+                <div class="bg-black/30 border border-gold-500/15 rounded-2xl p-5 mb-6 text-center">
+                    <p class="text-xs sm:text-sm text-silk-200/90 leading-loose">
+                        مستوحى من هالة التميّز التي تحيط بالشخصيات الطموحة والذكية عبر التاريخ، يروي Aura قصة رجل يفرض حضوره بثقافته، ثقته، وأناقة شخصيته.
+                    </p>
+                </div>
             </div>
 
-            <!-- شبكة عرض المنتجات (فارغة وجاهزة) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="productsContainer">
-                <!-- أضف منتجاتك الجديدة هنا -->
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-gold-500/10">
+                <button onclick="openModal('aura')" class="border border-gold-500/40 text-gold-300 hover:bg-gold-500/10 py-3 px-3 rounded-xl text-xs font-tajawal transition flex items-center justify-between">
+                    <span>استكشف الهرم العطري</span>
+                    <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/9647706665648?text=مرحباً، أود طلب عطر (Aura)" target="_blank" class="bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-gray-950 font-bold py-3 px-3 rounded-xl text-xs font-tajawal text-center transition shadow-lg flex items-center justify-center">
+                    طلب العطر
+                </a>
             </div>
-        </section>
-        <!-- نهاية القسم الجديد -->
+        </div>
+
+        <!-- 2. Élise -->
+        <div class="bg-[#1a080c]/90 border-2 border-gold-500/30 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-gold-500/60 transition-all duration-300">
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div>
+                <div class="text-center mb-6">
+                    <span class="inline-block text-[10px] sm:text-xs font-tajawal tracking-widest uppercase text-gold-400 bg-gold-500/10 px-4 py-1 rounded-full border border-gold-500/20 mb-4">ÉDITION ROYALE</span>
+                    <div class="w-20 h-28 mx-auto border-2 border-gold-400/70 rounded-t-2xl rounded-b-lg relative flex flex-col items-center justify-center p-2 shadow-inner bg-gradient-to-b from-gold-500/10 to-transparent mb-4">
+                        <div class="w-3 h-3 bg-gold-400 rounded-sm absolute -top-4"></div>
+                        <div class="w-8 h-8 rounded-full border border-gold-400/50 flex items-center justify-center mb-1 text-[10px] text-gold-300 font-bold">É</div>
+                        <span class="font-amiri text-xs text-gold-300 font-bold tracking-wider">Élise</span>
+                    </div>
+                    <span class="text-xs font-tajawal text-gold-300/70 uppercase tracking-widest block mb-1">COSMIC ELEGANCE</span>
+                    <h3 class="font-amiri text-3xl sm:text-4xl font-bold text-silk-100">Élise | إليز</h3>
+                </div>
+
+                <div class="bg-black/30 border border-gold-500/15 rounded-2xl p-5 mb-6 text-center">
+                    <p class="text-xs sm:text-sm text-silk-200/90 leading-loose">
+                        في عالم يتجاوز المألوف، وُلد Élise ليعيد تعريف مفهوم العطر الفاخر مستوحى من أسرار الفضاء والطاقة الكامنة في الإنسان.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-gold-500/10">
+                <button onclick="openModal('elise')" class="border border-gold-500/40 text-gold-300 hover:bg-gold-500/10 py-3 px-3 rounded-xl text-xs font-tajawal transition flex items-center justify-between">
+                    <span>استكشف الهرم العطري</span>
+                    <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/9647706665648?text=مرحباً، أود طلب عطر (Élise)" target="_blank" class="bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-gray-950 font-bold py-3 px-3 rounded-xl text-xs font-tajawal text-center transition shadow-lg flex items-center justify-center">
+                    طلب العطر
+                </a>
+            </div>
+        </div>
+
+        <!-- 3. Bacio -->
+        <div class="bg-[#1a080c]/90 border-2 border-gold-500/30 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-gold-500/60 transition-all duration-300">
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div>
+                <div class="text-center mb-6">
+                    <span class="inline-block text-[10px] sm:text-xs font-tajawal tracking-widest uppercase text-gold-400 bg-gold-500/10 px-4 py-1 rounded-full border border-gold-500/20 mb-4">TIGER'S EYE</span>
+                    <div class="w-20 h-28 mx-auto border-2 border-gold-400/70 rounded-t-2xl rounded-b-lg relative flex flex-col items-center justify-center p-2 shadow-inner bg-gradient-to-b from-gold-500/10 to-transparent mb-4">
+                        <div class="w-3 h-3 bg-gold-400 rounded-sm absolute -top-4"></div>
+                        <div class="w-8 h-8 rounded-full border border-gold-400/50 flex items-center justify-center mb-1"></div>
+                        <span class="font-amiri text-xs text-gold-300 font-bold tracking-wider">Bacio</span>
+                    </div>
+                    <span class="text-xs font-tajawal text-gold-300/70 uppercase tracking-widest block mb-1">STRENGTH & SUCCESS</span>
+                    <h3 class="font-amiri text-3xl sm:text-4xl font-bold text-silk-100">Bacio | باتشيو</h3>
+                </div>
+
+                <div class="bg-black/30 border border-gold-500/15 rounded-2xl p-5 mb-6 text-center">
+                    <p class="text-xs sm:text-sm text-silk-200/90 leading-loose">
+                        وُلد Bacio من روح حجر عين النمر النادر، ذلك الحجر الذي ارتبط عبر التاريخ بالقوة، الحماية، والنجاح.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-gold-500/10">
+                <button onclick="openModal('bacio')" class="border border-gold-500/40 text-gold-300 hover:bg-gold-500/10 py-3 px-3 rounded-xl text-xs font-tajawal transition flex items-center justify-between">
+                    <span>استكشف الهرم العطري</span>
+                    <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/9647706665648?text=مرحباً، أود طلب عطر (Bacio)" target="_blank" class="bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-gray-950 font-bold py-3 px-3 rounded-xl text-xs font-tajawal text-center transition shadow-lg flex items-center justify-center">
+                    طلب العطر
+                </a>
+            </div>
+        </div>
+
+        <!-- 4. Vero -->
+        <div class="bg-[#1a080c]/90 border-2 border-gold-500/30 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-gold-500/60 transition-all duration-300">
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div>
+                <div class="text-center mb-6">
+                    <span class="inline-block text-[10px] sm:text-xs font-tajawal tracking-widest uppercase text-gold-400 bg-gold-500/10 px-4 py-1 rounded-full border border-gold-500/20 mb-4">PARISIAN ART</span>
+                    <div class="w-20 h-28 mx-auto border-2 border-gold-400/70 rounded-t-2xl rounded-b-lg relative flex flex-col items-center justify-center p-2 shadow-inner bg-gradient-to-b from-gold-500/10 to-transparent mb-4">
+                        <div class="w-3 h-3 bg-gold-400 rounded-sm absolute -top-4"></div>
+                        <div class="w-8 h-8 rounded-full border border-gold-400/50 flex items-center justify-center mb-1"></div>
+                        <span class="font-amiri text-xs text-gold-300 font-bold tracking-wider">Vero</span>
+                    </div>
+                    <span class="text-xs font-tajawal text-gold-300/70 uppercase tracking-widest block mb-1">TIMELESS ELEGANCE</span>
+                    <h3 class="font-amiri text-3xl sm:text-4xl font-bold text-silk-100">Vero | فيرو</h3>
+                </div>
+
+                <div class="bg-black/30 border border-gold-500/15 rounded-2xl p-5 mb-6 text-center">
+                    <p class="text-xs sm:text-sm text-silk-200/90 leading-loose">
+                        في شوارع باريس الهادئة، حيث يلتقي الفن بالأزياء الراقية، وُلد Vero ليجسد رؤية تتجاوز حدود الزمن.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-gold-500/10">
+                <button onclick="openModal('vero')" class="border border-gold-500/40 text-gold-300 hover:bg-gold-500/10 py-3 px-3 rounded-xl text-xs font-tajawal transition flex items-center justify-between">
+                    <span>استكشف الهرم العطري</span>
+                    <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/9647706665648?text=مرحباً، أود طلب عطر (Vero)" target="_blank" class="bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-gray-950 font-bold py-3 px-3 rounded-xl text-xs font-tajawal text-center transition shadow-lg flex items-center justify-center">
+                    طلب العطر
+                </a>
+            </div>
+        </div>
+
+        <!-- 5. OR -->
+        <div class="bg-[#1a080c]/90 border-2 border-gold-500/30 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-gold-500/60 transition-all duration-300">
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div>
+                <div class="text-center mb-6">
+                    <span class="inline-block text-[10px] sm:text-xs font-tajawal tracking-widest uppercase text-gold-400 bg-gold-500/10 px-4 py-1 rounded-full border border-gold-500/20 mb-4">SILENT LEADERSHIP</span>
+                    <div class="w-20 h-28 mx-auto border-2 border-gold-400/70 rounded-t-2xl rounded-b-lg relative flex flex-col items-center justify-center p-2 shadow-inner bg-gradient-to-b from-gold-500/10 to-transparent mb-4">
+                        <div class="w-3 h-3 bg-gold-400 rounded-sm absolute -top-4"></div>
+                        <div class="w-8 h-8 rounded-full border border-gold-400/50 flex items-center justify-center mb-1"></div>
+                        <span class="font-amiri text-xs text-gold-300 font-bold tracking-wider">OR</span>
+                    </div>
+                    <span class="text-xs font-tajawal text-gold-300/70 uppercase tracking-widest block mb-1">STRENGTH & NATURE</span>
+                    <h3 class="font-amiri text-3xl sm:text-4xl font-bold text-silk-100">OR . | أور</h3>
+                </div>
+
+                <div class="bg-black/30 border border-gold-500/15 rounded-2xl p-5 mb-6 text-center">
+                    <p class="text-xs sm:text-sm text-silk-200/90 leading-loose">
+                        في قلب غابة تغمرها أشعة الشمس، تقف الأشجار المهيبة لتروي حكاية القوة والثبات عبر الزمن.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-gold-500/10">
+                <button onclick="openModal('or')" class="border border-gold-500/40 text-gold-300 hover:bg-gold-500/10 py-3 px-3 rounded-xl text-xs font-tajawal transition flex items-center justify-between">
+                    <span>استكشف الهرم العطري</span>
+                    <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/9647706665648?text=مرحباً، أود طلب عطر (OR)" target="_blank" class="bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-gray-950 font-bold py-3 px-3 rounded-xl text-xs font-tajawal text-center transition shadow-lg flex items-center justify-center">
+                    طلب العطر
+                </a>
+            </div>
+        </div>
+
+        <!-- 6. Perla -->
+        <div class="bg-[#1a080c]/90 border-2 border-gold-500/30 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-gold-500/60 transition-all duration-300">
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div>
+                <div class="text-center mb-6">
+                    <span class="inline-block text-[10px] sm:text-xs font-tajawal tracking-widest uppercase text-gold-400 bg-gold-500/10 px-4 py-1 rounded-full border border-gold-500/20 mb-4">ROYAL FEMININITY</span>
+                    <div class="w-20 h-28 mx-auto border-2 border-gold-400/70 rounded-t-2xl rounded-b-lg relative flex flex-col items-center justify-center p-2 shadow-inner bg-gradient-to-b from-gold-500/10 to-transparent mb-4">
+                        <div class="w-3 h-3 bg-gold-400 rounded-sm absolute -top-4"></div>
+                        <div class="w-8 h-8 rounded-full border border-gold-400/50 flex items-center justify-center mb-1 text-[10px] text-gold-300 font-bold">PERLA</div>
+                        <span class="font-amiri text-xs text-gold-300 font-bold tracking-wider">Perla</span>
+                    </div>
+                    <span class="text-xs font-tajawal text-gold-300/70 uppercase tracking-widest block mb-1">ROYAL ELEGANCE</span>
+                    <h3 class="font-amiri text-3xl sm:text-4xl font-bold text-silk-100">Perla . | بيرلا</h3>
+                </div>
+
+                <div class="bg-black/30 border border-gold-500/15 rounded-2xl p-5 mb-6 text-center">
+                    <p class="text-xs sm:text-sm text-silk-200/90 leading-loose">
+                        في قصر فرنسي تحيط به حدائق الورد الفاخرة، وُلد Perla . ليجسّد صورة الأنوثة الملكية العصرية.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-gold-500/10">
+                <button onclick="openModal('perla')" class="border border-gold-500/40 text-gold-300 hover:bg-gold-500/10 py-3 px-3 rounded-xl text-xs font-tajawal transition flex items-center justify-between">
+                    <span>استكشف الهرم العطري</span>
+                    <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/9647706665648?text=مرحباً، أود طلب عطر (Perla)" target="_blank" class="bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-gray-950 font-bold py-3 px-3 rounded-xl text-xs font-tajawal text-center transition shadow-lg flex items-center justify-center">
+                    طلب العطر
+                </a>
+            </div>
+        </div>
+
+        <!-- 7. Rêve -->
+        <div class="bg-[#1a080c]/90 border-2 border-gold-500/30 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-2xl relative overflow-hidden group hover:border-gold-500/60 transition-all duration-300 md:col-span-2 max-w-2xl mx-auto w-full">
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div>
+                <div class="text-center mb-6">
+                    <span class="inline-block text-[10px] sm:text-xs font-tajawal tracking-widest uppercase text-gold-400 bg-gold-500/10 px-4 py-1 rounded-full border border-gold-500/20 mb-4">L'ÉLÉGANCE MYSTIQUE</span>
+                    <div class="w-20 h-28 mx-auto border-2 border-gold-400/70 rounded-t-2xl rounded-b-lg relative flex flex-col items-center justify-center p-2 shadow-inner bg-gradient-to-b from-gold-500/10 to-transparent mb-4">
+                        <div class="w-3 h-3 bg-gold-400 rounded-sm absolute -top-4"></div>
+                        <div class="w-8 h-8 rounded-full border border-gold-400/50 flex items-center justify-center mb-1"></div>
+                        <span class="font-amiri text-xs text-gold-300 font-bold tracking-wider">Rêve</span>
+                    </div>
+                    <span class="text-xs font-tajawal text-gold-300/70 uppercase tracking-widest block mb-1">LUXURY & MYSTERY</span>
+                    <h3 class="font-amiri text-3xl sm:text-4xl font-bold text-silk-100">Rêve | ريف</h3>
+                </div>
+
+                <div class="bg-black/30 border border-gold-500/15 rounded-2xl p-5 mb-6 text-center">
+                    <p class="text-xs sm:text-sm text-silk-200/90 leading-loose">
+                        في ليلة يضيئها القمر، وبين قصور هادئة ينساب فوقها الضوء برقة، وُلد Rêve ليجسّد معنى الفخامة المطلقة.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-4 border-t border-gold-500/10">
+                <button onclick="openModal('reve')" class="border border-gold-500/40 text-gold-300 hover:bg-gold-500/10 py-3 px-3 rounded-xl text-xs font-tajawal transition flex items-center justify-between">
+                    <span>استكشف الهرم العطري</span>
+                    <svg class="w-4 h-4 transform rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <a href="https://wa.me/9647706665648?text=مرحباً، أود طلب عطر (Rêve)" target="_blank" class="bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-gray-950 font-bold py-3 px-3 rounded-xl text-xs font-tajawal text-center transition shadow-lg flex items-center justify-center">
+                    طلب العطر
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- نافذة الهرم العطري المنبثقة (Modal) -->
+<div id="perfumeModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 p-4">
+    <div class="bg-[#180508] border-2 border-gold-500/50 rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl transform scale-95 transition-transform duration-300 max-h-[90vh] overflow-y-auto" id="modalContentBox">
+        
+        <!-- زر الإغلاق -->
+        <button onclick="closeModal()" class="absolute top-4 left-4 w-9 h-9 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-300 flex items-center justify-center hover:bg-gold-500/20 transition">
+            ✕
+        </button>
+
+        <!-- معلومات العطر الديناميكية داخل المودال -->
+        <div class="text-center mb-6">
+            <span id="modalBadge" class="inline-block text-[10px] sm:text-xs font-tajawal tracking-widest uppercase text-gold-400 bg-gold-500/10 px-4 py-1 rounded-full border border-gold-500/20 mb-3"></span>
+            <h3 id="modalTitle" class="font-amiri text-2xl sm:text-3xl font-bold text-silk-100"></h3>
+        </div>
+
+        <div class="bg-black/40 border border-gold-500/20 rounded-2xl p-4 mb-6 text-center">
+            <p id="modalDesc" class="text-xs sm:text-sm text-silk-200/90 leading-relaxed"></p>
+        </div>
+
+        <div class="text-center mb-4">
+            <span class="text-xs font-tajawal tracking-widest text-gold-400 uppercase font-semibold">الهرم العطري للتكوين (OLFACTORY PYRAMID)</span>
+            <div class="w-16 h-0.5 bg-gold-500/40 mx-auto mt-1"></div>
+        </div>
+
+        <!-- الطبقات العطرية -->
+        <div class="space-y-3 mb-6">
+            <!-- الافتتاحية -->
+            <div class="bg-[#24080d] border border-gold-500/30 rounded-xl p-4 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-bold text-gold-300 block mb-1">افتتاحية العطر (Top Notes)</span>
+                    <p id="modalTop" class="text-xs text-silk-200/80"></p>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xs">▲</div>
+            </div>
+
+            <!-- القلب -->
+            <div class="bg-[#24080d] border border-gold-500/30 rounded-xl p-4 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-bold text-gold-300 block mb-1">قلب العطر (Heart Notes)</span>
+                    <p id="modalHeart" class="text-xs text-silk-200/80"></p>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xs">◆</div>
+            </div>
+
+            <!-- القاعدة -->
+            <div class="bg-[#24080d] border border-gold-500/30 rounded-xl p-4 flex items-center justify-between">
+                <div>
+                    <span class="text-xs font-bold text-gold-300 block mb-1">قاعدة العطر (Base Notes)</span>
+                    <p id="modalBase" class="text-xs text-silk-200/80"></p>
+                </div>
+                <div class="w-8 h-8 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 text-xs">▼</div>
+            </div>
+        </div>
+
+        <!-- زر الطلب داخل النافذة -->
+        <a id="modalWhatsAppBtn" href="#" target="_blank" class="w-full bg-gradient-to-r from-gold-600 to-gold-500 hover:from-gold-500 hover:to-gold-400 text-gray-950 font-bold py-3.5 px-4 rounded-xl text-sm font-tajawal text-center transition shadow-lg flex items-center justify-center gap-2">
+            <span>طلب هذا العطر المباشر عبر الواتساب</span>
+        </a>
+    </div>
+</div>
+
+<!-- كود الجافاسكريبت لتشغيل النافذة المنبثقة -->
+<script>
+    const perfumesData = {
+        aura: {
+            badge: "L'ÉLÉGANCE MYSTIQUE",
+            title: "Aura | أورا",
+            desc: "مستوحى من هالة التميّز التي تحيط بالشخصيات الطموحة والذكية عبر التاريخ، يروي Aura قصة رجل يفرض حضوره بثقافته، ثقته، وأناقة شخصيته. تبدأ الرحلة بانطلاقة فاكهية نابضة بالحيوية، ثم تتطور إلى قلب أنيق ومتوازن، قبل أن تستقر على قاعدة خشبية عميقة تعكس القوة والنجاح.",
+            top: "الأناناس، الجريب فروت، البرغموت",
+            heart: "الياسمين، الباتشولي، خشب الأرز",
+            base: "الطحلب الخشبي، الأخشاب الجافة"
+        },
+        elise: {
+            badge: "ÉDITION ROYALE",
+            title: "Élise | إليز",
+            desc: "في عالم يتجاوز المألوف، وُلد Élise ليعيد تعريف مفهوم العطر الفاخر. مستوحى من أسرار الفضاء والطاقة الكامنة في الإنسان، صُمم هذا العطر ليمنح من يرتديه حضورًا استثنائيًا يلفت الانتباه منذ اللحظة الأولى.",
+            top: "نوتات شرقية قوية وفانيليا فاخرة",
+            heart: "عنبر عميق وأخشاب دافئة",
+            base: "توابل مميزة، مسك عصري، ولمسات حلوة وآسرة"
+        },
+        bacio: {
+            badge: "TIGER'S EYE",
+            title: "Bacio | باتشيو",
+            desc: "وُلد Bacio من روح حجر عين النمر النادر، ذلك الحجر الذي ارتبط عبر التاريخ بالقوة، الحماية، والنجاح. تبدأ رحلته بانتعاش الجريب فروت وإشراقه كأول ضوء للفجر، ثم ترتفع حرارة الزنجبيل.",
+            top: "الجريب فروت",
+            heart: "الزنجبيل",
+            base: "الأمبروكسان، نوتات خشبية"
+        },
+        vero: {
+            badge: "PARISIAN ART",
+            title: "Vero | فيرو",
+            desc: "في شوارع باريس الهادئة، حيث يلتقي الفن بالأزياء الراقية، وُلد Vero ليجسد رؤية تتجاوز حدود الزمن. لم تكن الفكرة مجرد ابتكار عطر جميل، بل صناعة تجربة فنية تحمل توقيعًا فريدًا.",
+            top: "نوتات معدنية أنيقة وأخشاب فاخرة",
+            heart: "جلود ناعمة وتوابل راقية",
+            base: "لمسات زهرية عصرية، عنبر فاخر ومسك"
+        },
+        or: {
+            badge: "SILENT LEADERSHIP",
+            title: "OR . | أور",
+            desc: "في قلب غابة تغمرها أشعة الشمس، تقف الأشجار المهيبة لتروي حكاية القوة والثبات عبر الزمن. ومن هذه الروح وُلد OR .، عطر يمزج بين انتعاش الطبيعة وفخامة الأخشاب النادرة.",
+            top: "الريحان التايلندي، الفلفل الأسود، الجريب فروت",
+            heart: "النوتات الخضراء، نجيل الهند",
+            base: "خشب أكيغالاوود، الباتشولي، الأمبروكسان"
+        },
+        perla: {
+            badge: "ROYAL FEMININITY",
+            title: "Perla . | بيرلا",
+            desc: "في قصر فرنسي تحيط به حدائق الورد الفاخرة، وُلد Perla . ليجسّد صورة الأنوثة الملكية العصرية. تبدأ الحكاية بنفحات فاكهية ناعمة ومضيئة، ثم تتفتح الورود الفاخرة لتفيض بالرومنسية والرقي.",
+            top: "الكمثرى، الليتشي، البرغموت",
+            heart: "الورد التركي، العود الخفيف، البخور",
+            base: "الفانيليا، العنبر، الأخشاب الناعمة"
+        },
+        reve: {
+            badge: "L'ÉLÉGANCE MYSTIQUE",
+            title: "Rêve | ريف",
+            desc: "في ليلة يضيئها القمر، وبين قصور هادئة ينساب فوقها الضوء برقة، وُلد Rêve ليجسّد معنى الفخامة المطلقة. تبدأ رحلته بلمسات ناعمة ومضيئة، ثم تتفتح أزهاره النادرة كحديقة ملكية.",
+            top: "الكمثرى، البندق، اللوز المر، اللبان",
+            heart: "الورد الدمشقي، الياسمين سامباك، الزعفران، الأوسمانثوس",
+            base: "خشب الصندل، العنبر الرمادي، الفانيليا، اللابدانوم، أكيغالاوود"
+        }
+    };
+
+    function openModal(perfumeKey) {
+        const data = perfumesData[perfumeKey];
+        if (!data) return;
+
+        document.getElementById('modalBadge').innerText = data.badge;
+        document.getElementById('modalTitle').innerText = data.title;
+        document.getElementById('modalDesc').innerText = data.desc;
+        document.getElementById('modalTop').innerText = data.top;
+        document.getElementById('modalHeart').innerText = data.heart;
+        document.getElementById('modalBase').innerText = data.base;
+        
+        // ربط زر الواتساب داخل النافذة برقم الهاتف ورسالة العطر المحدد
+        const encodedMsg = encodeURIComponent(`مرحباً، أود طلب عطر (${data.title})`);
+        document.getElementById('modalWhatsAppBtn').href = `https://wa.me/9647706665648?text=${encodedMsg}`;
+
+        const modal = document.getElementById('perfumeModal');
+        const contentBox = document.getElementById('modalContentBox');
+
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+            contentBox.classList.remove('scale-95');
+            contentBox.classList.add('scale-100');
+        }, 10);
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('perfumeModal');
+        const contentBox = document.getElementById('modalContentBox');
+
+        contentBox.classList.remove('scale-100');
+        contentBox.classList.add('scale-95');
+        modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+</script>
 
     </div>
 
